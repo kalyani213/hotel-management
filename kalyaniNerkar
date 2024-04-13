@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .tag{          
+            padding:20px;
+			margin:5px;
+            color:aliceblue;
+            display:inline-block;
+    }
+    </style>
+    </head>
+    <body>
+<h1>Enter your favorite food items:</h1>
+<input type="text"id="tagname"/>
+<button onclick="createtag()">creat</button>
+<div id="display"></div>
+</body>
+<script>
+    function createtag()
+    {
+        var div=document.creatElement('div');
+        div.innerHTML=tagname.value;
+        div.setAttribute('class','tag');
+        display.appendChild(div);
+    
+    }
+</script>  
+</body>
+</html>
